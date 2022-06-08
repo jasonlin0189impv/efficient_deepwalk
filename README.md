@@ -12,14 +12,16 @@ Use efficient random walk algorithm to reduce computation time in deepwalk
 
 ## Experiments (use MacBook M1 pro)
 * Setting
+
 | Dataset  | Walk Length | Number of Walks | Embedding Size | Window Size |
 | -------: |------------:| ---------------:| --------------:|------------:|
 | Cora     | 20          | 30              | 64             | 5           |
 | PubMed   | 20          | 20              | 64             | 5           |
 
 * Experiments (test size 0.3)
+
 |Method      | Dataset  | Computing Time | Training F1 (micro) | Testing F1 (micro) |
-|----------- | -------: |---------------:| -------------------:| ------------------:|
+|----------: | -------: |---------------:| -------------------:| ------------------:|
 |Basic RW    | Cora     | 13.8 s         | 0.393               | 0.299              |
 |Efficient RW| Cora     | 2.5 s          | 0.395               | 0.299              |
 |Basic RW    | PubMed   | 133 s          | 0.550               | 0.399              |
